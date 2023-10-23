@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class ViewController: UIViewController {
     
@@ -15,6 +16,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var idLabel: UILabel!
+    @IBOutlet weak var downloadImageBtn: UIButton!
+    @IBOutlet weak var imageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -93,5 +96,10 @@ class ViewController: UIViewController {
         }
     }
     
+    
+    @IBAction func downloadImageAction(_ sender: Any) {
+        downloadImageBtn.isHidden = true
+        imageView.kf.setImage(with: URL (string: "https://developer.apple.com/assets/elements/icons/swift/swift-96x96.png"))
+    }
 }
 
