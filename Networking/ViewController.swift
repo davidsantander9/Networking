@@ -11,11 +11,15 @@ class ViewController: UIViewController {
     
     //Outlets
     @IBOutlet weak var getUserBtn: UIButton!
-    
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var emailLabel: UILabel!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        activityIndicator.hidesWhenStopped = true
+        activityIndicator.stopAnimating()
     }
     
     
@@ -23,7 +27,17 @@ class ViewController: UIViewController {
         //var user: User
         //user = NetworkingProvider.shared.getUser(id: 10)
         //print(user)
-        NetworkingProvider.shared.getUser(id: 628331)
+        activityIndicator.startAnimating()
+        NetworkingProvider.shared.getUser(id: 628331){
+          (user) in
+            self.nameLabel.text = "Name: " + user.name!
+            self.emailLabel.text = "Email: " + user.email!
+            self.activityIndicator.stopAnimating()
+        } failure: { error in
+            print("Error")
+            self.activityIndicator.stopAnimating()
+        }
+        
 
     }
     

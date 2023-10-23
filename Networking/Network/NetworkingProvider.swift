@@ -15,15 +15,15 @@ final class NetworkingProvider {
     private let kBaseUrl = "https://gorest.co.in/public/v2"
     private let kStatusOk = 200...299
     
-    func getUser(id: Int){
+    func getUser(id: Int, success: @escaping (_ user: User) -> (), failure: @escaping (_ error: Error?) -> ()){
         let url = "\(kBaseUrl)/users/\(id)"
         AF.request(url, method: .get).validate(statusCode: kStatusOk).responseDecodable(of: User.self) {
             response in
             
             if let user = response.value {
-                print(user)
+                success(user)
             }else{
-                print(response.error?.responseCode ?? "No error")
+                failure(response.error)
             }
         }
     }
