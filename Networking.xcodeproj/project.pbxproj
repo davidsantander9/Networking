@@ -15,6 +15,7 @@
 		76BA7EAC2AE620A30025BD46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76BA7EAA2AE620A30025BD46 /* LaunchScreen.storyboard */; };
 		76BA7EB52AE6212F0025BD46 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 76BA7EB42AE6212F0025BD46 /* Alamofire */; };
 		76BA7EB72AE621560025BD46 /* NetworkingProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BA7EB62AE621560025BD46 /* NetworkingProvider.swift */; };
+		76BA7EBB2AE622AE0025BD46 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BA7EBA2AE622AE0025BD46 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		76BA7EAB2AE620A30025BD46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		76BA7EAD2AE620A30025BD46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76BA7EB62AE621560025BD46 /* NetworkingProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingProvider.swift; sourceTree = "<group>"; };
+		76BA7EBA2AE622AE0025BD46 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,9 +77,18 @@
 		76BA7EB82AE6224B0025BD46 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				76BA7EB92AE6229B0025BD46 /* Data */,
 				76BA7EB62AE621560025BD46 /* NetworkingProvider.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		76BA7EB92AE6229B0025BD46 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				76BA7EBA2AE622AE0025BD46 /* User.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +171,7 @@
 				76BA7EA42AE620A20025BD46 /* ViewController.swift in Sources */,
 				76BA7EA02AE620A20025BD46 /* AppDelegate.swift in Sources */,
 				76BA7EB72AE621560025BD46 /* NetworkingProvider.swift in Sources */,
+				76BA7EBB2AE622AE0025BD46 /* User.swift in Sources */,
 				76BA7EA22AE620A20025BD46 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
