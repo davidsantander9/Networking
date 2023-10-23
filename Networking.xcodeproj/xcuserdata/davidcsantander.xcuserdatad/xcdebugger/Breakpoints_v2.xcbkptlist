@@ -3,4 +3,69 @@
    uuid = "D9B08133-0704-42C9-9530-64DF950EDC99"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B25AC4D3-E36B-4E33-B287-CD9A1BF459E2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Networking/Network/NetworkingProvider.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "updateUser(id:user:success:failure:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B25AC4D3-E36B-4E33-B287-CD9A1BF459E2 - 1ef2efa332c25aeb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Networking.User, Alamofire.AFError&gt;) -&gt; () in Networking.NetworkingProvider.updateUser(id: Swift.Int, user: Networking.User, success: (Networking.User) -&gt; (), failure: (Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Networking"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/davidcsantander/Documents/ios/Course%20esp/Networking/Networking/Network/NetworkingProvider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "912">
+               </Location>
+               <Location
+                  uuid = "B25AC4D3-E36B-4E33-B287-CD9A1BF459E2 - 1ef2efa332c25ac8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Networking.User, Alamofire.AFError&gt;) -&gt; () in Networking.NetworkingProvider.updateUser(id: Swift.Int, user: Networking.User, success: (Networking.User) -&gt; (), failure: (Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Networking"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/davidcsantander/Documents/ios/Course%20esp/Networking/Networking/Network/NetworkingProvider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "348">
+               </Location>
+               <Location
+                  uuid = "B25AC4D3-E36B-4E33-B287-CD9A1BF459E2 - 1ef2efa332c25ac8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Networking.User, Alamofire.AFError&gt;) -&gt; () in Networking.NetworkingProvider.updateUser(id: Swift.Int, user: Networking.User, success: (Networking.User) -&gt; (), failure: (Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Networking"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/davidcsantander/Documents/ios/Course%20esp/Networking/Networking/Network/NetworkingProvider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "888">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

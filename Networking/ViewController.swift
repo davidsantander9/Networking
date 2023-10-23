@@ -29,11 +29,11 @@ class ViewController: UIViewController {
         //user = NetworkingProvider.shared.getUser(id: 10)
         //print(user)
         activityIndicator.startAnimating()
-        NetworkingProvider.shared.getUser(id: 5461338){
+        NetworkingProvider.shared.getUser(id: 5462895){
           (user) in
-            self.nameLabel.text = "Name: " + user.name!
-            self.emailLabel.text = "Email: " + user.email!
-            self.idLabel.text = "Id: " + user.id!.description
+            self.nameLabel.text = "Name: " + (user.name ?? "")
+            self.emailLabel.text = "Email: " + (user.email ?? "")
+            self.idLabel.text = "Id: " + (user.id?.description ?? "")
             self.activityIndicator.stopAnimating()
         } failure: { error in
             print("Error")
@@ -44,7 +44,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func postUserAction(_ sender: Any) {
-        let newUser = User(id: nil, name: "David", email: "daviidcs9@gmail.com", gender: "Male", status: "Active")
+        let newUser = User(id: nil, name: "Augusto", email: "daviidcs92@gmail.com", gender: "Male", status: "Active")
         
         activityIndicator.startAnimating()
         NetworkingProvider.shared.addUser(user: newUser){
@@ -58,6 +58,26 @@ class ViewController: UIViewController {
             self.activityIndicator.stopAnimating()
         }
     }
+    
+    
+
+    
+    @IBAction func updateUserAction(_ sender: Any) {
+        let newUser = User(id: nil,  name: "Dave", email: nil, gender: nil , status: nil)
+        activityIndicator.startAnimating()
+        NetworkingProvider.shared.updateUser(id: 5462895, user: newUser){
+          (user) in
+            self.nameLabel.text = "Name: " + user.name!
+            self.emailLabel.text = "Email: " + user.email!
+            self.idLabel.text = "Id: " + user.id!.description
+            self.activityIndicator.stopAnimating()
+        } failure: { error in
+            print("Error")
+            self.activityIndicator.stopAnimating()
+        }
+    }
+    
+    
     
 }
 

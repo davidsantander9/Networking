@@ -53,6 +53,18 @@
                                     <action selector="postUserAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rVt-ye-Z96"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d9V-Xg-MSm">
+                                <rect key="frame" x="16" y="288" width="361" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="361" id="OIj-FC-wUb"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Update User"/>
+                                <connections>
+                                    <action selector="postUserAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qTr-9g-R8J"/>
+                                    <action selector="updateUserAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mtq-lv-aPT"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -62,6 +74,7 @@
                             <constraint firstItem="bG3-zP-fxj" firstAttribute="top" secondItem="U4t-5z-idZ" secondAttribute="bottom" constant="16" id="9zB-OP-sZK"/>
                             <constraint firstItem="xPq-lU-6mu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CWP-eA-EwO"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="U4t-5z-idZ" secondAttribute="trailing" constant="16" id="IKV-IJ-P7O"/>
+                            <constraint firstItem="d9V-Xg-MSm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Lln-nK-g2S"/>
                             <constraint firstItem="xPq-lU-6mu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="NDm-GJ-WeV"/>
                             <constraint firstItem="cmG-kY-N0t" firstAttribute="top" secondItem="Elv-5S-HnQ" secondAttribute="bottom" constant="16" id="RXL-wp-nE3"/>
                             <constraint firstItem="T3W-f3-wMc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="Rog-fR-Hfa"/>
@@ -69,6 +82,7 @@
                             <constraint firstItem="T3W-f3-wMc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="S5g-WL-Ise"/>
                             <constraint firstItem="U4t-5z-idZ" firstAttribute="top" secondItem="T3W-f3-wMc" secondAttribute="bottom" constant="16" id="T5c-85-adq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="T3W-f3-wMc" secondAttribute="trailing" constant="16" id="VpB-uK-Zrk"/>
+                            <constraint firstItem="d9V-Xg-MSm" firstAttribute="top" secondItem="cmG-kY-N0t" secondAttribute="bottom" constant="16" id="Y7j-7w-uiZ"/>
                             <constraint firstItem="U4t-5z-idZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ZAx-Yh-Bye"/>
                             <constraint firstItem="Elv-5S-HnQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="hAY-90-yC6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cmG-kY-N0t" secondAttribute="trailing" constant="16" id="hpD-nS-oT7"/>
