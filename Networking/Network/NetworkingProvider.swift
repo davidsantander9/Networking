@@ -63,4 +63,18 @@ final class NetworkingProvider {
         }
     }
     
+    func deleteUser(id: Int, success: @escaping () -> (), failure: @escaping (_ error: Error?) -> ()){
+        
+        let url = "\(kBaseUrl)/users/\(id)"
+        let headers: HTTPHeaders = [.authorization(bearerToken: kToken)]
+        
+        AF.request(url, method: .delete, headers: headers).validate(statusCode: kStatusOk).response { response in
+            if let error = response.error{
+                failure(error)
+            }else {
+                success()
+            }
+        }
+    }
+    
 }

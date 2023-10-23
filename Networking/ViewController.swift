@@ -36,7 +36,9 @@ class ViewController: UIViewController {
             self.idLabel.text = "Id: " + (user.id?.description ?? "")
             self.activityIndicator.stopAnimating()
         } failure: { error in
-            print("Error")
+            self.nameLabel.text = "Error"
+            self.emailLabel.text = ""
+            self.idLabel.text = ""
             self.activityIndicator.stopAnimating()
         }
         
@@ -44,7 +46,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func postUserAction(_ sender: Any) {
-        let newUser = User(id: nil, name: "Augusto", email: "daviidcs92@gmail.com", gender: "Male", status: "Active")
+        let newUser = User(id: nil, name: "Augusto", email: "daviidcs@gmail.com", gender: "Male", status: "Active")
         
         activityIndicator.startAnimating()
         NetworkingProvider.shared.addUser(user: newUser){
@@ -78,6 +80,18 @@ class ViewController: UIViewController {
     }
     
     
+    @IBAction func deleteUserAction(_ sender: Any) {
+        activityIndicator.startAnimating()
+        NetworkingProvider.shared.deleteUser(id: 5462895){
+            self.activityIndicator.stopAnimating()
+            self.emailLabel.text = "Email: "
+            self.idLabel.text = "Id: "
+
+        } failure: { error in
+            self.activityIndicator.stopAnimating()
+            print("Error")
+        }
+    }
     
 }
 
